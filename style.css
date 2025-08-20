@@ -20,6 +20,7 @@ header {
   padding: 0;
   display: flex;
   gap: 10px;
+  
   }
 #menu-esquerda ul li a, #menu-direita ul li a{
   text-decoration: none;
@@ -28,6 +29,7 @@ header {
   text-align: center;
   padding: 1rem;  
 }
+
 #menu-direita ul li .assinar{
   color: white;
   text-align: center;
@@ -47,18 +49,17 @@ header {
 #container {
   background-color: #1f1f1f;
   margin: 0;
-  padding: 0px 200px;
+  padding: 0px 250px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: white;
 }
 
 #main {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  color: white;
-  background-color: #1f1f1f;
   padding: 30px;
   display: flex;
   flex-direction: column;
 }
-#main h1{
+h1{
   font-size: 3.75rem; 
 }
 #main p{
@@ -84,15 +85,63 @@ header {
   transform: translateY(-2px); 
 }
 
+/*COMO FUNCIONA*/
+
+h2{
+ font-size: 1.5em; 
+ color: white;
+ text-align: center;
+ margin-top:50px;
+}
+
+h3{
+ font-size: 1em; 
+ color: white;
+ text-align: center;
+}
+
+hr{
+  opacity: 0.4;
+  margin: 30px auto;
+}
+
+.titles{
+  width: 800px;
+  margin: auto;
+}
+
+#como-funciona #video{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+/* CURSOS */
+
+#cursos #pricing{
+
+flex-wrap: wrap;
+max-width: 1000px;      /* largura máxima da área */
+margin: 50px auto;        /* centraliza na tela */
+gap:15px;
+}
+
+#cursos .plano {
+  flex: 0 0 25%;  
+  
+}
+
 /*TABELA DE PREÇOS*/
 
 #pricing {
-  font-family: 'Segoe UI', Roboto, sans-serif;
   color: white;
   display: flex;
   flex-direction: row;
   gap: 30px;
+  justify-content: center;
+  margin: 50px 0 50px 0px;
 }
+
 .plano{
   border-radius: .6rem;
   width: 300px;
@@ -100,6 +149,7 @@ header {
   background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
+  border: 0.5px solid rgba(255, 255, 255, 0.519);
 }
 .plano h4 span {
   font-size: 10px;
@@ -134,7 +184,6 @@ header {
   margin-top: 15px;
   box-shadow: 0 4px 6px rgba(34, 34, 34, 0.233);
 }
-
 .plano .assinar:hover{
   opacity: 0.7;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
@@ -156,6 +205,57 @@ header {
   font-size: 13px;
   }
 
+/*DÚVIDAS FREQUENTES*/
+.QA{
+  margin: 50px 100px;
+}
+
+.question{
+  font-weight: 600;
+}
+
+.answer{
+  opacity: 0.6;
+}
+
+#contato {
+  margin: 0 100px;
+  padding: 0;
+  
+  }
+
+#contato #p-up{
+  margin: 0;
+  opacity: 0.6;  
+}
+#contato #p-down{
+  margin: 0;
+  font-size: 2em;
+  display: inline-block;
+}
+#contato a{
+  margin-left: 15px;
+  background-color: #7c7c7c;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 0.5rem;  
+  
+}
+
+#contato a:hover{
+  background-color: #4e4b4b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  
+}
+/*RODAPÉ*/
+
+footer p{
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 /*CAIXINHA DE FEEDBACK*/
 
