@@ -59,7 +59,15 @@ header {
   transform: translateY(-2px);
 }
 
-
+/* para fazer menu para celular */
+.menu-toggle {
+  display: none; /* escondido no desktop */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
 
 /*GENERAL*/
 main {
@@ -285,17 +293,56 @@ iframe {
 }
 
 #faq a:hover {
-  background-color: var(--preto-claro);;
+  background-color: var(--preto-claro);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
   opacity: 0.7;
 }
 /*RODAPÉ*/
 
+footer {
+  width: 90%;
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer p {
   font-size: 0.9rem;
-  text-align: center;
+  opacity: 0.8;
+}
 
+footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--branco);
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+  footer div {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 /*CAIXINHA DE FEEDBACK*/

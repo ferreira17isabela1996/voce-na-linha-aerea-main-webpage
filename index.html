@@ -15,9 +15,10 @@
   </head>
   <body>
     <!--- cabeçalho - menu -->
-     <header>
+    <header>
       <nav id="menu">
-        <ul>
+        <button class="menu-toggle" id="menu-toogle-id">☰</button>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#como-funciona">Como funciona</a></li>
           <li><a href="#cursos">Cursos</a></li>
           <li><a href="#preco">Preços</a></li>
@@ -182,11 +183,16 @@
         </div>
         <a href="">Entrar em contato</a>
       </section>
-      
     </main>
     <hr />
     <!--- RODAPÉ-->
-    <footer><p>Você na linha aérea. Todos os direitos reservados.</p></footer>
+    <footer>
+      <div id="footer-left"><p>Você na linha aérea. Todos os direitos reservados.</p></div>
+      
+      <div id="footer-right">
+        <ul><li><a href="">Termos de uso.</a></li>
+          <li><a href="">Política de privacidade.</a></li></ul></div>
+    </footer>
 
     <!--- janela de feedback -->
 
@@ -204,5 +210,6 @@
    <button id="ignorar"><p>Ignorar</p></button>
    <button id="enviar"><p>Enviar</p></button>
  </div>-->
+    <script src="script.js"></script>
   </body>
 </html>
