@@ -59,15 +59,24 @@ header {
   transform: translateY(-2px);
 }
 
-/* para fazer menu para celular */
-.menu-toggle {
-  display: none; /* escondido no desktop */
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+@media (width<=768px) {
+  header {
+    position: relative;
+  }
+  nav {
+    width: 100%;  
+    justify-items: flex-end;
+
+  }
+  .link-sumir{
+    display: none;
+  }
+ #menu ul li .assinar {
+    background-color: var(--preto-dark);
+  }
+
 }
+
 
 /*GENERAL*/
 main {
@@ -118,6 +127,7 @@ section {
 @media (max-width: 768px) {
   main {
     width: 100%;
+    margin: 0;
   }
 
   .titles {
@@ -275,10 +285,16 @@ iframe {
 
 .question {
   font-weight: 600;
+  cursor: pointer;
 }
 
 .answer {
   opacity: 0.6;
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 #faq a {
