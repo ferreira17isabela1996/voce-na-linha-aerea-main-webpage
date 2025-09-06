@@ -1,160 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Você na linha aérea</title>
-</head>
-<body>
-<header>
-<nav id="menu-esquerda">
-  <ul>
-    <li><a href="#como-funciona">Como funciona</a></li>
-    <li><a href="#cursos">Cursos</a></li>
-    <li><a href="#preco">Preços</a></li>
-    <li><a href="#faq">Dúvidas frequentes</a></li>
- </ul>
-</nav>
-<nav id="menu-direita">
-  <ul>
-    <li><a href="">Login</a></li>
-    <li><a href="" class="assinar">Assinatura</a></li>
-  </ul>
-</nav>
-</header>
-<div id="container">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--- cabeçalho - menu -->
+     <header>
+      <nav id="menu">
+        <ul>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#preco">Preços</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="" class="assinar">Assinar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--- apresentação principal -->
+      <section id="main">
+        <h1>Do PP ao A320.</h1>
+        <h2>Seja piloto de linha aérea.</h2>
+        <a href="">Teste agora</a>
+      </section>
+      <hr />
 
-<!--- apresentação principal -->
-<div id="main">
-  <h1>Do PP ao A320.</h1>
-  <p>Uma plataforma interativa com tudo que você  </br>
-    precisa para se tornar piloto.</p>
-  <a class="assinar" href="">Teste agora</a>
-</div>
-<hr>
-<!--- seção como funciona -->
-  <div id="como-funciona">
-    <div class="titles">
-    <h2>Não somos apenas uma plataforma de cursos e de simulados.</h2>
-    <h3>Somos uma plataforma com lições dinâmicas para você ir do piloto privado ao A320.</h3>
-    </div>
-    <div id="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/nKygK8uc9lM?si=wvfEnXnT9Lm2Gvsg" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  </div>
-  <hr>
-<!--- seção cursos -->
-<div id="cursos">
-  <div class="titles">
-  <h2>Muito além do que é cobrado pela ANAC.</h2>
-  <h3>Aqui você encontra o conteúdo básico exigido pela agência, mas também acessa conteúdos práticos fundamentais para se tornar um aviador acima da média.</h3>
-  </div>
-  <div id="pricing">
-    
-      <div class="plano">
-        <h4>PILOTO PRIVADO</h4>
-        <p>Lições de teoria de voo de baixa velocidade, regulamentos de tráfego VFR, conhecimentos técnicos, meteorologia aeronáutica, navegação aérea, fraseologia padrão e navegação visual prática.</p>
-      </div>
-      <div class="plano">
-        <h4>PILOTO COMERCIAL<span>  EM BREVE</span></h4>
-        <p>Lições de teoria de voo de alta velocidade, regulamentos de tráfego IFR, conhecimentos técnicos, navegação aérea IFR e prática em simuladores de voo.</p>
-      </div>
-   
-    
-      <div class="plano">
-        <h4>PILOTO DE LINHA AÉREA<span>  EM BREVE</span></h4>
-        <p>Lições de performance de aeronaves, peso e balanceamento, motores a reação e preparatório para as principais companhias aéreas do Brasil.</p>
-      </div>
-      <div class="plano">
-        <h4>INSTRUTOR DE VOO<span>  EM BREVE</span></h4>
-        <p>Lições sobre didática, airmanship, técnicas de ensino na sala de aula e no ar. Conhecimentos militares, americanos que você só encontra aqui.</p>
-      </div>   
-    
-    
-      <div class="plano">
-        <h4>ICAO<span>  EM BREVE</span></h4>
-        <p>Lições preparatórias para a prova de inglês mais famosa da aviação para obter nota 4 e 5, além de fraseologia em inglês.</p>
-      </div>
-      <div class="plano">
-        <h4>TYPE RATING A320<span>  EM BREVE</span></h4>
-        <p>Lições de sistemas do A320 (elétrico, hidráulico, pressurização, ar condicionado, APU, motores a reação, etc), procedimentos normais, filosofia AIRBUS e procedimentos anormais.</p>
-      </div>
-   
-  </div>
-</div>
-<hr>
-<!--- seção de preço -->
-  <div id="preco">
-  <div class="titles">
-    <h2>Ser piloto não precisa sair caro.</h2>
-    <h3>Por menos que uma pizza por mês você tem acesso a um conteúdo dinâmico, organizado e didático para levar sua carreira para o próximo nível.</h3>
-  </div>
-  <div id="pricing">
-    <div class="plano">
-    <h4> Mensal </h4>
-    <p class="price">$69 <span>BRL</span></p>
-    <p class="subtext">cobrado mensalmente </p>
-    <a class="assinar" href="">Assinar</a>
-    <ul>
-      <li>Acesso a todo conteúdo</li>
-      <li>Um mês de acesso a plataforma</li>
-      <li>7 dias de teste gratuito</li>
-    </ul>
-    </div>
-    <div class="plano">
-    <h4> Anual <span>MAIS POPULAR</span></h4> 
-    <p class="price">$57 <span>BRL</span></p>
-    <p class="subtext">por mês cobrado por um ano </p>
-    <a class="assinar" href="">Assinar</a>
-    <ul>
-      <li>Acesso a todo conteúdo</li>
-      <li>Um ano de acesso a plataforma</li>
-      <li>14 dias de teste gratuito</li>
-    </ul>
-    </div>
-  </div>
-  </div>
-  <hr>
-   
-  <!--- seção dúvidas frequentes-->
-  
-    <div id="faq">
-      <div class="titles">
-      <h2>Dúvidas frequentes</h2>
-      </div>
-    
-    <div class="QA">
-      <p class="question">Como funciona o teste gratuito?</p>
-      <p class="answer">Você pode testar nossa plataforma por 7 dias sem precisar cadastrar o cartão. Caso decida por assinar terá mais 7 dias (ou 14 dias se for no plano anual) para desistir da compra.</p>
-    </div>
-    <div class="QA">
-      <p class="question">Assinei, mas desisti. Como faço para cancelar?</p>
-      <p class="answer">Se sua compra foi feita dentro de 7 dias (ou 14 dias no plano anual), basta enviar um e-mail para vocenalinhaaerea@gmail.com e extornaremos o valor para você.</p>
-    </div>
-    <div class="QA">
-      <p class="question">Existem simulados na plataforma?</p>
-      <p class="answer">Todo conteúdo é feito em formato de perguntas e respostas. No entanto, existem lições próprias com simulados voltados para a prova da ANAC, embora não seja esse o foco principal da nossa didática.</p>
-    </div>
+      <!--- seção como funciona -->
+      <section id="como-funciona">
+        <div class="titles">
+          <h2>Mais que cursos e simulados.</h2>
+          <h3>O futuro da formação de um piloto de linha aérea.</h3>
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/nKygK8uc9lM?si=wvfEnXnT9Lm2Gvsg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr />
 
-    <div id="contato">
-      <p id="p-up">Ainda está com dúvida? Entre em contato.</p>
-      <p id="p-down">Estou aqui para ajudar</p>
-      <a href="">Entrar em contato</a>
-    </div>
-    </div>
-    <hr>
+      <!--- seção cursos -->
+      <section id="cursos">
+        <div class="titles">
+          <h2>Muito além da ANAC.</h2>
+          <h3>
+            Aqui você encontra o conteúdo básico exigido pela agência, mas
+            também acessa conteúdos práticos fundamentais para se tornar um
+            aviador acima da média.
+          </h3>
+        </div>
+        <div id="cursos-pai">
+          <div class="cursos-filho">
+            <h4>PILOTO PRIVADO</h4>
+            <p>
+              Lições de teoria de voo de baixa velocidade, regulamentos de
+              tráfego VFR, conhecimentos técnicos, meteorologia aeronáutica,
+              navegação aérea, fraseologia padrão e navegação visual prática.
+            </p>
+          </div>
+          <div class="cursos-filho">
+            <h4>PILOTO COMERCIAL<span class="span-verde"> EM BREVE</span></h4>
+            <p>
+              Lições de teoria de voo de alta velocidade, regulamentos de
+              tráfego IFR, conhecimentos técnicos, navegação aérea IFR e prática
+              em simuladores de voo.
+            </p>
+          </div>
 
+          <div class="cursos-filho">
+            <h4>
+              PILOTO DE LINHA AÉREA<span class="span-verde"> EM BREVE</span>
+            </h4>
+            <p>
+              Lições de performance de aeronaves, peso e balanceamento, motores
+              a reação e preparatório para as principais companhias aéreas do
+              Brasil.
+            </p>
+          </div>
+          <div class="cursos-filho">
+            <h4>INSTRUTOR DE VOO<span class="span-verde"> EM BREVE</span></h4>
+            <p>
+              Lições sobre didática, airmanship, técnicas de ensino na sala de
+              aula e no ar. Conhecimentos militares, americanos que você só
+              encontra aqui.
+            </p>
+          </div>
+
+          <div class="cursos-filho">
+            <h4>ICAO<span class="span-verde"> EM BREVE</span></h4>
+            <p>
+              Lições preparatórias para a prova de inglês mais famosa da aviação
+              para obter nota 4 e 5, além de fraseologia em inglês.
+            </p>
+          </div>
+          <div class="cursos-filho">
+            <h4>TYPE RATING A320<span class="span-verde"> EM BREVE</span></h4>
+            <p>
+              Lições de sistemas do A320 (elétrico, hidráulico, pressurização,
+              ar condicionado, APU, motores a reação, etc), procedimentos
+              normais, filosofia AIRBUS e procedimentos anormais.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--- seção de preço -->
+      <section id="preco">
+        <div class="titles">
+          <h2>Ser piloto não precisa sair caro.</h2>
+          <h3>Menos que uma pizza por mês.</h3>
+        </div>
+        <div id="plano-pai">
+          <div class="plano-filho">
+            <h4>Mensal</h4>
+            <p class="price">$79 <span>BRL</span></p>
+            <p class="subtext">cobrado mensalmente</p>
+            <a class="assinar" href="">Assinar</a>
+            <ul>
+              <li>Acesso a todo conteúdo</li>
+              <li>Um mês de acesso a plataforma</li>
+              <li>7 dias de teste gratuito</li>
+            </ul>
+          </div>
+          <div class="plano-filho">
+            <h4>Anual <span class="span-verde">MAIS POPULAR</span></h4>
+            <p class="price">$67 <span>BRL</span></p>
+            <p class="subtext">por mês cobrado por um ano</p>
+            <a class="assinar" href="">Assinar</a>
+            <ul>
+              <li>Acesso a todo conteúdo</li>
+              <li>Um ano de acesso a plataforma</li>
+              <li>14 dias de teste gratuito</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--- seção dúvidas frequentes-->
+      <section id="faq">
+        <div class="titles">
+          <h2>Dúvidas frequentes</h2>
+        </div>
+
+        <div class="QA">
+          <p class="question">Como funciona o teste gratuito?</p>
+          <p class="answer">
+            Você pode testar nossa plataforma por 7 dias sem precisar cadastrar
+            o cartão. Caso decida por assinar terá mais 7 dias (ou 14 dias se
+            for no plano anual) para desistir da compra.
+          </p>
+        </div>
+        <div class="QA">
+          <p class="question">Assinei, mas desisti. Como faço para cancelar?</p>
+          <p class="answer">
+            Se sua compra foi feita dentro de 7 dias (ou 14 dias no plano
+            anual), basta enviar um e-mail para vocenalinhaaerea@gmail.com e
+            extornaremos o valor para você.
+          </p>
+        </div>
+        <div class="QA">
+          <p class="question">Existem simulados na plataforma?</p>
+          <p class="answer">
+            Todo conteúdo é feito em formato de perguntas e respostas. No
+            entanto, existem lições próprias com simulados voltados para a prova
+            da ANAC, embora não seja esse o foco principal da nossa didática.
+          </p>
+        </div>
+        <a href="">Entrar em contato</a>
+      </section>
+      
+    </main>
+    <hr />
     <!--- RODAPÉ-->
-    <footer><p>Você na linha aérea. Todos os direitos reservados</p></footer>
-  
-  </div>
-<!--- janela de feedback -->
+    <footer><p>Você na linha aérea. Todos os direitos reservados.</p></footer>
 
-<!--<div id="feedback">
+    <!--- janela de feedback -->
+
+    <!--<div id="feedback">
   <h3>Debriefing</h3>
   <p class="text"> O que você achou do conteúdo?</p>
   <ul>
@@ -168,6 +204,5 @@
    <button id="ignorar"><p>Ignorar</p></button>
    <button id="enviar"><p>Enviar</p></button>
  </div>-->
-    
-</body>
+  </body>
 </html>

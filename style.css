@@ -1,272 +1,313 @@
-body{
+:root {
+  --azul-vla: #103849;
+  --preto-claro: #1f1f1f;
+  --branco: white;
+  --verde-vla: #29cc57;
+  --preto-dark: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
-  background-color: #1f1f1f;
+  background-color: var(--preto-dark);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: var(--branco);
 }
 
 /*MENU*/
-
 header {
-  padding: 50px 200px;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  color: white;
-  background-color: #1f1f1f;
+  background-color: var(--preto-dark);
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  border-bottom: 1px solid var(--preto-claro);
 }
-#menu-esquerda ul, #menu-direita ul{
+
+#menu ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 10px;
-  
-  }
-#menu-esquerda ul li a, #menu-direita ul li a{
+}
+#menu ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--branco);
   display: block;
   text-align: center;
-  padding: 1rem;  
+  padding: 1rem;
 }
-
-#menu-direita ul li .assinar{
-  color: white;
-  text-align: center;
-  background-color: #103849;
+#menu ul li .assinar {
+  color: var(--branco);
+  background-color: var(--azul-vla);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(34, 34, 34, 0.233); 
+  box-shadow: 0 rgba(34, 34, 34, 0.233);
   font-weight: 600;
 }
-#menu-direita ul li .assinar:hover{
+#menu ul li .assinar:hover {
   opacity: 0.7;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);   
-  transform: translateY(-2px); 
+  box-shadow: 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+
+
+/*GENERAL*/
+main {
+  width: 60%;
+  margin: 9rem auto 0;
+}
+
+h1 {
+  font-size: 3rem;
+  border-bottom: 0.4rem solid var(--verde-vla);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+hr {
+  opacity: 0.4;
+  margin: 3rem auto;
+  color: var(--preto-claro);
+}
+
+/*SEÇÕES - GENERAL*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.titles {
+  text-align: center;
+}
+
+.span-verde {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--verde-vla);
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  .titles {
+    width: 95%;
+  }
 }
 
 /*APRESENTAÇÃO*/
 
-#container {
-  background-color: #1f1f1f;
-  margin: 0;
-  padding: 0px 250px;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  color: white;
-}
-
-#main {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-}
-h1{
-  font-size: 3.75rem; 
-}
-#main p{
-  margin-bottom: 40px;
-  margin-top: 0px;
-  font-size: 1.5rem;
-}
-#main a{
-  width: 150px;
+#main a {
+  width: 30%;
   text-align: center;
   font-weight: 500;
   text-decoration: none;
-  color: white;
-  background-color: #103849;
-  padding: 15px;
+  color: var(--branco);
+  background-color: var(--verde-vla);
+  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(34, 34, 34, 0.233);
   font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
-#main a:hover{
+#main a:hover {
   opacity: 0.7;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
-  transform: translateY(-2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
-/*COMO FUNCIONA*/
-
-h2{
- font-size: 1.5em; 
- color: white;
- text-align: center;
- margin-top:50px;
+@media (max-width: 450px) {
+  #main a {
+    width: 90%;
+  }
 }
 
-h3{
- font-size: 1em; 
- color: white;
- text-align: center;
+/* COMO FUNCIONA */
+
+iframe {
+  width: 560px;
+  height: 315px;
 }
 
-hr{
-  opacity: 0.4;
-  margin: 30px auto;
-}
-
-.titles{
-  width: 800px;
-  margin: auto;
-}
-
-#como-funciona #video{
-  display: flex;
-  justify-content: center;
-  margin: 50px 0 50px 0;
+@media (max-width: 768px) {
+  iframe {
+    max-width: 100%;
+  }
 }
 
 /* CURSOS */
 
-#cursos #pricing{
-
-flex-wrap: wrap;
-max-width: 1000px;      /* largura máxima da área */
-margin: 50px auto;        /* centraliza na tela */
-gap:15px;
+#cursos-pai {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-#cursos .plano {
-  flex: 0 0 25%;  
-  
+.cursos-filho {
+  border-radius: 0.6rem;
+  width: 40%;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.519);
+  background-color: var(--preto-claro);
+}
+
+@media (max-width: 800px) {
+  #cursos .cursos-filho {
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
 /*TABELA DE PREÇOS*/
 
-#pricing {
-  color: white;
+#plano-pai {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 0 50px 0px;
+  gap: 1rem;
+  width: 100%;
 }
 
-.plano{
-  border-radius: .6rem;
-  width: 300px;
+.plano-filho {
+  border-radius: 0.6rem;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   border: 0.5px solid rgba(255, 255, 255, 0.519);
+  background-color: var(--preto-claro);
 }
-.plano h4 span {
-  font-size: 10px;
-  color:#29CC57;
+
+@media (max-width: 768px) {
+  .plano-filho {
+    flex-direction: column;
+    width: 80%;
+  }
 }
-.plano .price{
-  font-size: 28px;
+
+.plano-filho .price {
+  font-size: 2.2rem;
   margin: 0;
   font-weight: 600;
-  
 }
-.plano .price span{
-  font-size: 13px;
+.plano-filho .price span {
+  font-size: 1.2rem;
   font-weight: 400;
-  
 }
-.plano .subtext {
-  font-size: 12px;
+.plano-filho .subtext {
+  font-size: 0.8rem;
   opacity: 0.9;
   margin-top: 0;
 }
 
-.plano .assinar{
+.plano-filho .assinar {
   text-decoration: none;
-  color: white;
-  margin: auto;
-  width: 280px;
+  color: var(--branco);
+  width: 100%;
   text-align: center;
-  background-color: #103849;
-  padding: 10px;
+  background-color: var(--azul-vla);
+  padding: 0.8rem;
   border-radius: 0.5rem;
-  margin-top: 15px;
+  margin-top: 0.5rem;
   box-shadow: 0 4px 6px rgba(34, 34, 34, 0.233);
 }
-.plano .assinar:hover{
+.plano-filho .assinar:hover {
   opacity: 0.7;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
-  transform: translateY(-2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
-.plano ul {
+.plano-filho ul {
   list-style-type: none;
   padding-left: 0;
-  font-size: 15px;
 }
 
-.plano ul li::before{
-  content: '✔'; /* Use o caractere Unicode para o ícone de check */
-  color: white; /* Cor verde para o ícone */
-  display: inline-block; 
+.plano-filho ul li::before {
+  content: "✔"; /* Use o caractere Unicode para o ícone de check */
+  color: var(--branco); /* Cor verde para o ícone */
+  display: inline-block;
   margin-bottom: 5px;
-  width:1.2em; /* Garante que o ícone tenha um espaçamento fixo */
-  font-size: 13px;
-  }
+  width: 1.2em; /* Garante que o ícone tenha um espaçamento fixo */
+}
 
 /*DÚVIDAS FREQUENTES*/
-.QA{
-  margin: 50px 100px;
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.QA {
+  width: 90%;
 }
 
-.question{
+.question {
   font-weight: 600;
 }
 
-.answer{
+.answer {
   opacity: 0.6;
 }
 
-#contato {
-  margin: 0 100px;
-  padding: 0;
-  
-  }
-
-#contato #p-up{
-  margin: 0;
-  opacity: 0.6;  
-}
-#contato #p-down{
-  margin: 0;
-  font-size: 2em;
-  display: inline-block;
-}
-#contato a{
-  margin-left: 15px;
-  background-color: #7c7c7c;
+#faq a {
+  background-color: var(--preto-claro);
   text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 0.5rem;  
-  
+  color: var(--branco);
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  margin: auto;
 }
 
-#contato a:hover{
-  background-color: #4e4b4b;
+#faq a:hover {
+  background-color: var(--preto-claro);;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
-  
+  opacity: 0.7;
 }
 /*RODAPÉ*/
 
-footer p{
-  font-size: 10px;
+footer p {
+  font-size: 0.9rem;
   text-align: center;
-  margin-bottom: 30px;
+
 }
 
 /*CAIXINHA DE FEEDBACK*/
 
 #feedback {
   width: 300px;
-  border: 1px solid #615E5E;
+  border: 1px solid #615e5e;
   padding: 10px 0px;
   border-radius: 10px;
   text-align: center;
   margin: auto;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
 }
 
 #feedback ul {
@@ -279,16 +320,17 @@ footer p{
   margin-bottom: 15px;
 }
 
-#feedback ul li button { 
+#feedback ul li button {
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--branco);
   border: 1px solid #363636;
   color: #363636;
-  
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: background-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-#feedback ul li button:hover { 
+#feedback ul li button:hover {
   border-radius: 50%;
   background-color: #363636;
   border: 1px solid #363636;
@@ -298,30 +340,32 @@ footer p{
 }
 
 #feedback #ignorar {
-    color: #363636;
-    background:none;
-    border:none;
+  color: #363636;
+  background: none;
+  border: none;
 }
 
-#feedback #enviar{
-    color: white;
-    border-radius: 5px;
-    background-color: #103849;
-    width: 80px;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: 600;
-    text-decoration: none;
-    /* Adiciona uma transição suave para as animações */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    }
+#feedback #enviar {
+  color: white;
+  border-radius: 5px;
+  background-color: var(--azul-vla);
+  width: 80px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  text-decoration: none;
+  /* Adiciona uma transição suave para as animações */
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
 
-#feedback #enviar:hover{
-  background-color: #103849e5;
+#feedback #enviar:hover {
+  background-color: var(--azul-vla);
+  opacity: 0.5;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra um pouco maior */
-  transform: translateY(-2px); /* Eleva o botão levemente */ 
-   }
+  transform: translateY(-2px); /* Eleva o botão levemente */
+}
 
-#feedback #ignorar:hover{
- color:#222222;
+#feedback #ignorar:hover {
+  color: #222222;
 }
